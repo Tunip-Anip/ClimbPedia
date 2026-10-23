@@ -1,0 +1,71 @@
+---
+layout: base
+title: Home
+---
+
+<div class="main">
+    <h1 class="page-title">Reach New Heights</h1>
+    <div class="search-and-nav">
+        <input type="text" placeholder="Search..." class="search-bar">
+        <div class="nav-row">
+            <a href="{{ 'html/Gyms' | relative_url }}" class="nav-button"><b>Popular Gyms</b></a>
+            <a href="{{ 'html/Technique' | relative_url }}" class="nav-button"><b>Technique</b></a>
+            <a href="{{ 'html/Holds' | relative_url }}" class="nav-button"><b>Types of Holds</b></a>
+        </div>
+    </div>
+    <style>
+        body {
+            background-image: url("{{ 'assets/BackgroundImage1.webp' | relative_url }}");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center 150%;
+        }
+    </style>
+</div>
+<div class="learn-about-us">
+    <a href="{{ 'html/Information' | relative_url }}" class="learn-about-us-link">Learn about us >>></a>
+</div>
+<div class="things-of-the-week">
+    <div class="weekly-grid">
+        <article class="thing-of-the-week">
+            <div class="thing-of-the-week-info">
+                <div class="thing-of-the-week-info-top">
+                    <h2 class="which-thing-of-the-week">Technique of the week</h2>
+                    <h3 class="thing-of-the-week-date">August 31, 2026</h3>
+                </div>
+                <h3 class="thing-of-the-week-name">Drop Knee</h3>
+                <a href="{{ 'html/Technique' | relative_url }}" class="thing-of-the-week-button"><b>Learn More</b></a>
+            </div>
+            <img class="thing-of-the-week-image" src="{{ 'assets/Drop-Knee.jpg' | relative_url }}" alt="Drop Knee Image">
+        </article>
+        <article class="thing-of-the-week">
+            <div class="thing-of-the-week-info">
+                <div class="thing-of-the-week-info-top">
+                    <h2 class="which-thing-of-the-week">Hold of the week</h2>
+                    <h3 class="thing-of-the-week-date">August 31, 2026</h3>
+                </div>
+                <h3 class="thing-of-the-week-name">Pinch</h3>
+                <a href="{{ 'assets/Holds.jpg' | relative_url }}" class="thing-of-the-week-button"><b>Learn More</b></a>
+            </div>
+            <img class="thing-of-the-week-image" src="{{ 'assets/Pinch-Hold.jpg' | relative_url }}" alt="Drop Knee Image">
+        </article>
+    </div>
+</div>
+<div class="featured-articles">
+    <h1 class="featured-articles-title">Featured Articles</h1>
+    <div class="featured-articles-grid">
+        <a href="{{ 'html/Technique' | relative_url }}l" class="featured-article">
+            <h1 class="article-name">Technique</h1>
+            <h1 class="emoji">📖</h1>
+        </a>
+        <a href="{{ 'html/Holds' | relative_url }}" class="featured-article">
+            <h1 class="article-name">Types of Holds</h1>
+            <h1 class="emoji">🪨</h1>
+        </a>
+        <a href="{{ 'html/Gyms' | relative_url }}" class="featured-article">
+            <h1 class="article-name">Gyms</h1>
+            <h1 class="emoji">🧗‍♂️</h1>
+        </a>
+    </div>
+</div>

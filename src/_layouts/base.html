@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{{ page.title }} - ClimbPedia</title>
+        <link rel="stylesheet" href="{{ 'style/style.css' | relative_url }}">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header class="page-header">
+            <nav class="navbar-split">
+                <a href="{{ 'index' | relative_url }}" class="top-logo"><b>ClimbPedia</b></a>
+                <input type="text" placeholder="Search..." class="top-search-bar">
+            </nav>
+        </header>
+        <section>
+            {{ content }}
+        </section>
+        <footer class="site-footer">
+            <div class="footer-top">
+                <h1 class="site-name-footer">ClimbPedia</h1>
+                <a href="https://www.instagram.com/oscarmitbo/" class="instagram-link">
+                    <img class="instagram-logo" src="{{ 'assets/Instagram-Logo.webp' | relative_url }}" alt="Instagram Logo">
+                </a>
+            </div>
+            <div class="footer-middle">
+                <div class="about-us">
+                    <h1 class="about-us-title">About us</h1>
+                    <a href="{{ 'html/Information' | relative_url }}" class="information">Information about ClimbPedia</a>
+                </div>
+                <div class="need-help">
+                    <h1 class="need-help-title">Need help?</h1>
+                    <a href="{{ 'html/Contact' | relative_url }}" class="contact-us">Contact us</a>
+                    <a href="{{ 'html/Sitemap' | relative_url }}" class="sitemap">Sitemap</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <h1 class="creator-text">Created by Oscar Dodd for ClimbPedia</h1>
+            </div>
+        </footer>
+    </body>
+</html>
